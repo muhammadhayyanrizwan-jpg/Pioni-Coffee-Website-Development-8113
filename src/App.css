@@ -1,0 +1,166 @@
+/* Custom styles for Pioni Coffee */
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Loading animation styles */
+.loading-container {
+  background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+}
+
+/* Button hover effects */
+.btn-primary {
+  background: linear-gradient(135deg, #92400e 0%, #b45309 100%);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #78350f 0%, #92400e 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(146, 64, 14, 0.3);
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #92400e;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #78350f;
+}
+
+/* PWA install button */
+.pwa-install-btn {
+  backdrop-filter: blur(10px);
+  background: rgba(146, 64, 14, 0.95);
+}
+
+/* Animation utilities */
+.fade-in {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-up {
+  animation: slideUp 0.8s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Coffee bean animation */
+.coffee-bean {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Star rating animation */
+.star-rating {
+  transition: all 0.2s ease;
+}
+
+.star-rating:hover {
+  transform: scale(1.1);
+}
+
+/* Form input focus styles */
+.form-input:focus {
+  border-color: #92400e;
+  box-shadow: 0 0 0 3px rgba(146, 64, 14, 0.1);
+  outline: none;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .mobile-padding {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .mobile-text {
+    font-size: 0.875rem;
+  }
+}
+
+/* Hero section overlay */
+.hero-overlay {
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(146, 64, 14, 0.3) 100%
+  );
+}
+
+/* Menu category active state */
+.menu-category-active {
+  background: linear-gradient(135deg, #92400e 0%, #b45309 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(146, 64, 14, 0.3);
+}
+
+/* Review card styles */
+.review-card {
+  border-left: 4px solid #92400e;
+  transition: all 0.3s ease;
+}
+
+.review-card:hover {
+  border-left-width: 6px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer link hover */
+.footer-link {
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #fbbf24;
+}
